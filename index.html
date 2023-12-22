@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background: linear-gradient(to left, #3498db, #2f8e4c);
+      background-size: 100% 100%;
+      animation: gradient 10s ease infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Выберите тип</h1>
+    <div class="button-container">
+      <button class="android-button">Android</button>
+      <button class="ios-button">iOS</button>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.button-container button').forEach(function(button) {
+      button.addEventListener('mouseenter', function() {
+        button.style.transform = 'scale(1.1)';
+      });
+      button.addEventListener('mouseleave', function() {
+        button.style.transform = 'scale(1)';
+      });
+    });
+  </script>
+</body>
+</html>
