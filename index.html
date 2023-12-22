@@ -127,6 +127,18 @@ body {
     top: 0;
     border-radius: 10px;
 }
+.logo {
+  position: absolute;
+  width: 434px;
+  height: 89px;
+  top: 325px;
+}
+.platform {
+  position: absolute;
+  width: 252px;
+  height: 42px;
+  top: 435px;
+}
 
 @keyframes glowing {
     0% { background-position: 0 0; }
@@ -136,14 +148,13 @@ body {
   </style>
 </head>
 <body>
-  <div class="rainbow-text-loop">
-    <h1>Выберите тип</h1>
-  </div>
+  <img class="logo" src="bg/logo.png" alt="logo">
+  <img class="platform" src="bg/platform.png" alt="platform">
   <div class="container">
     <h1>ㅤ</h1>
     <div class="button-container">
-      <button class="glow-on-hover">Android</button>
-      <button class="glow-on-hover">PC</button>
+      <a href="https://bit.ly/48tyamw"><button class="glow-on-hover">Android</button></a>
+      <a href="https://bit.ly/3ND73NN"><button class="glow-on-hover">PC</button></a>
     </div>
     <div class="half-transparent-rectangle"></div>
   </div>
